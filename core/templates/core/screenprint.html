@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--
+    Anything you put in between the double-dash arrow symbols shown around
+    this block of text is designated a 'comment' intended for human coders
+    and ignored by the computer. The top "<!DOCTYPE html>" line of code
+    declares that this text file is to be interpreted as HTML code.
+-->
+
+<html lang=en>
+<!--
+    This opening tag marks the start of the html code.  Everything below
+    until the </html> closing tag is part of this element. "lang" is an
+    attribute defining the language of the website. The value "en"
+    indicates this site is written in English. We indent the content
+    inside an element to make it easier for people to read and understand.
+-->
+
+    <head>
+    <!--Code about the website NOT displayed in the browser window.-->
+
+        <meta charset="UTF-8"> <!--Sets site to use standard characters.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sizes your site to the visitor's screen size -->
+
+        <meta name="author" content="Ayaan Riaz">
+        <!--
+            Some tags like "meta" are self-closing. They have "attributes"
+            but no inner content and they don't need or use a closing tag.
+        -->
+
+        <title>Ayaan's Screenprinting Project</title>
+        <!--The 'title' is what's displayed in the browser tab.-->
+
+        <link rel="stylesheet" href="{% static 'core/style.css' %}">
+        <!--
+            HTML (HyperText Markup Language) code is for the website
+            content. CSS (Cascading Style Sheets) code is for the website
+            style. The line above tells the browser the file location and
+            file name to find this code that you'll write/edit there.
+        -->
+ <link rel="icon" type="image/x-icon" href="{% static 'core/images/screenprint/IMG43.jpg' %}">
+    </head>
+
+    <body> <!--Everything to be displayed in the browser window.-->
+<nav>
+    <ul>
+	<li><a href="about">About Me</a></li>
+	<li><a href="blackbox">Black Box Investigation</a></li>
+	<li><a href="screenprint">Screenprinting Project</a></li>
+	<li><a href="dna">Genetics Documentary</a></li>
+    </ul>
+</nav>
+
+        <h1>Screen Printing Project</h1>
+        <h3>By: Ayaan Riaz</h3>
+        <h4>Introduction/Background Information</h4>
+<p>In the class New Media and Tech. for social change at ESUMS, my class was assigned a screenprinting project. I was required to take a photo of myself to depict a message that I wanted to share with the world and print that on a piece of paper, fabric, and a cardboard box.</p>
+        <h1>Purpose/Inspirations</h1>
+<p>The purpose of this project was to make a screen in which I would push paint through on a piece of paper, fabric, and a box. We started the project by looking at examples from the past like the famous “Uncle Sam” screen print. My screen print design was supposed to depict the message that we are the only ones that can impact and change the world for the better. The army hiring poster inspired me to create something that would motivate people to do something. </p>
+<h1>Photography</h1>
+<p>This project started off with taking a photo of yourself. You would then edit that photo to depict your message. My message was that we need you to change the world.To depict this message I got one of my team members to take a photo of me positioning my hands as if I am holding something. When I edit the photo I would insert a globe into my hands. The photo was a closeup of my hands and arms and the angle was made so the camera was above the hands showing that you have power. </p>
+<h4>Images of the Photography</h4>
+<img src="{% static 'core/images/screenprint/IMG46.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG47.JPG' %}" alt="" width= "200">
+
+<h1>Working in Photoshop</h1>
+<p>After I chose the best photo that I wanted to use, I opened the photo in adobe photoshop. Afterwards I separated the background, hands, arms, and body in different layers. I used the magic tool and brush tool to select each part that I wanted to separate into another layer. After that I merged the arms and hands layers to make them into 2 colors. I used the filter gallery to change the colors to just black and white because each color meant another screen and the maximum amount of screens was 2. When I got the hands and arms the proper colors, I had to add the globe. To do this I used Adobe Generative AI to fill the hands in with a globe and then tweaked the globe a bit using the brush tool. When all of that was completed I separated the final layers and exported each color as a single color png.</p>
+<h4>Images of Working in Photoshop</h4>
+<img src="{% static 'core/images/screenprint/IMG55.png' %}" alt="" width= "800">
+<img src="{% static 'core/images/screenprint/IMG61.png' %}" alt="" width= "200">
+
+<h1>Planning the Frame</h1>
+<p>After I exported my work out of photoshop, I opened it into adobe illustrator. I had two colors/single color png files, one was the hands/arms/globe outline and the other was the globe’s color. Once I had it added I looked at the instructions Mr. Sinusas wrote. I needed a 1.5 inch buffer between the content and the wood. Using this information I started measuring my images and made sure everything was the correct size and dimensions. After this step I used the color tool to figure out how many spoons of paint I needed to get green. Black was easy as it was just black paint. But to make green out of the CMYK colors, I had to mix 1 cyan to 1.5 spoons of yellow paint. </p>
+<h4>Images of Planning the Frames</h4>
+<img src="{% static 'core/images/screenprint/IMG56.png' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG62.png' %}" alt="" width= "200">
+
+<h1>Building the Frames</h1>
+<p>It was finally time to build the frames. I got a long piece of wood and measured the correct side using a ruler and made a perfect 45 degree angle using a triangular ruler. Now that I had all of my wood pieces measured, I used the saw with permission of Mr. Sinusas to cut my wood. Once all of the wood was cut I glued it together using wood glue and then with the help of a classmate stapled it together using a stapler.Once the frames were done, I cut out the mesh material for both of my wood frames. I had to make sure that the material was very tight otherwise it would let paint bleed through. With the help of the same classmate, I applied the mesh material to the wood frame very tightly using the staple gun and then cleaned the excess off with some scissors and masking tape. </p>
+<h4>Images of Building the Frames</h4>
+<img src="{% static 'core/images/screenprint/IMG6.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG9.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG11.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG15.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG26.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG24.JPG' %}" alt="" width= "200">
+<img class="full-width" src="{% static 'core/images/screenprint/IMG25.JPG' %}" alt="" width= "200">
+
+<h1>Creating the Stencils</h1>
+<p>It was now time to make the stencils. I sent the single color png files to the cameo stencil cutter using the silhouette studio program. I first got a sticky blue tray to attach the vinyl material on which my design would be cut on. Then I clicked send and it started cutting. Once both stencils were finished, it was time to carefully remove the unnecessary parts in which the paint would go through using a pick. I did this twice for both of my frames/designs.</p>
+<h4>Images of Creating the Stencils</h4>
+<img src="{% static 'core/images/screenprint/IMG60.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG59.JPG' %}" alt="" width= "200">
+<img class="full-width" src="{% static 'core/images/screenprint/IMG58.JPG' %}" alt="" width= "200">
+
+<h1>Assembling the Frames</h1>
+<p>To assemble the frame, I first had to iron it to the mesh material on the frames. Using a small iron, a heat mat, and a heat resistant cover, I ironed the stencil to stick onto the vinyl material of the frame. Then I peeled off the piece of plastic so paint could go through and covered the edges of the stencil with masking tape so paint doesn't bleed through in the wrong spots. My screens were now completed.</p>
+<h4>Images of Assembling the Frames</h4>
+<img src="{% static 'core/images/screenprint/IMG30.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG31.JPG' %}" alt="" width= "200">
+<img class="full-width" src="{% static 'core/images/screenprint/IMG54.JPG' %}" alt="" width= "200">
+
+<h1>Painting my Design</h1>
+<p> I used the adobe illustrator file to get the correct color of paint for the printing process. Once I had the paint, I used a clamp to clamp the frame and got 2 pieces of paper for the first test. Each frame resulted in a beautiful result and then it was time to do it on the fabric and cardboard which was also very clean and crisp. The only issue was aligning the two frames which was not always perfect causing some imperfections but it shows that the design was handmade. I cleaned the frames and let them dry. I also cut the fabric so Mr. Sinusas could sew them together to make a giant piece of art with everyone's design. I had completed this project.</p>
+<h4>Images of Painting the Final Design</h4>
+<img src="{% static 'core/images/screenprint/IMG35.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG37.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG39.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG49.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG48.JPG' %}" alt="" width= "200">
+<img src="{% static 'core/images/screenprint/IMG50.JPG' %}" alt="" width= "200">
+
+<h1>Reflecting</h1>
+<h4>What I Liked the Most</h4>
+<p>During this project, there were many ups and downs. Some of the things I enjoyed about this project was building the frames. I personally like to work with wood and make things and this project was really fun to plan and execute. Another thing I liked about this project was painting on paper and fabric. There was something that was very satisfying about pushing paint through the screen for me. I was best at painting and even helped my classmates paint their designs when they had problems.</p>
+<img class="full-width" src="{% static 'core/images/screenprint/IMG49.JPG' %}" alt="" width= "200">
+<h4>What I Found Challenging</h4>
+<p>The downs and challenges during this project was editing the photo in adobe photoshop. This wasn’t very difficult but it was a tedious process and there were so many parts you could easily mess up. It was the hardest step out of all of them which made it the most difficult. Everything  you did on photoshop was what your end result would be. However, I powered through and completed editing the photo to the desired state. I might use my photoshop skills in the future. Maybe to create a poster or something to promote a business of some kind.</p>
+<img class="full-width" src="{% static 'core/images/screenprint/IMG55.png' %}" alt="" width= "200">
+<h1>21st Century Skills I Developed</h1>
+<p>During this project I developed a lot of new skills. However, one specific 21st Century Competency skill I used most and developed the most during the project was Communication and Collaboration. During this project, communication was key so you could get help from your team members and classmates. Collaborating was also necessary to get work done. If you were behind you could just ask someone to help you out. I personally used this skill to help others with the painting project and get help with the steps that needed to be done with a partner, like assembling the frame. With my enhanced communication skills I can ask for help or provide help to others. The most important part that I learned from communication is being friendly and understanding of where people are at their step of the project and help them catch up no matter how behind or ahead they are. If I did this project alone with not help, it would 100% be much harder, and this project also shows how collaboration was really necessary to complete this project.
+</p>
+
+
+    </body>
+</html>
